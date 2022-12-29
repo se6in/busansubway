@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>부산 지하철 정보</title>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="css/m2style.css">
+<script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="wrap">
+		<h1>부산 지하철 정보</h1>
+		<a href="#" class="Left"><img src="img/arrow_left.png" alt="back" onClick="javascript:history.back(-1);"></a>
+	</div>
+
+	<nav>
+		<ul class="wrap">
+			<li><a href="index.htm" id="appMenuHome"><img src="img/icon_home.png">처음으로</a></li>
+			<li><a href="m1.htm" id="appMenu1"><img src="img/icon_subway.png">지하철</a></li>
+			<li class="on"><a href="m2.htm" id="appMenu2"><img src="img/icon_station.png">현재역</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id = "option">
+	<form>
+	<select id="lineNumber" name="lineNumber">
+	<option value="0">노선을 선택하세요.</option>
+	<option value="1">1호선</option>
+	<option value="2">2호선</option>
+	<option value="3">3호선</option>
+	<option value="4">4호선</option>
+	<option value="Bu">부산김해경전철</option>
+	<option value="Dong">동해선</option>
+	</select>
+		<input type="radio" name="direction" value="1" checked="checked" /><label>상행</label>
+		<input type="radio" name="direction" value="2" /><label>하행</label>
+	</form>
+	</div>
+	  <div class="box">
+		<div class="row head">
+		  <div>지하철역을 선택하세요.</div>
+		</div>
+		<div class="train_1">
+		  <li id="95"class="codename">다대포해수욕장<li id="96"class="codename">다대포항<li id="97"class="codename">낫개<li id="98"class="codename">신장림
+		  <li id="99"class="codename">장림<li id="100"class="codename">동매<li id="101"class="codename">신평<li id="102"class="codename">하단<li id="103"class="codename">당리
+		  <li id="104"class="codename">사하<li id="105"class="codename">괴정<li id="106"class="codename">대티<li id="c07"class="codename">서대신<li id="108"class="codename">동대신
+		  <li id="109"class="codename">토성<li id="110"class="codename">자갈치<li id="111"class="codename">남포<li id="112"class="codename">중앙<li id="113"class="codename">부산
+	      <li id="114"class="codename">초량<li id="115"class="codename">부산진<li id="116"class="codename">좌천<li id="117"class="codename">범일<li id="118"class="codename">범내골
+          <li id="119"class="codename">서면<li id="120"class="codename">부전<li id="121"class="codename">양정<li id="122"class="codename">시청<li id="123"class="codename">연산
+		  <li id="124"class="codename">교대<li id="125"class="codename">동래<li id="126"class="codename">명륜<li id="127"class="codename">온천장<li id="128"class="codename">부산대
+		  <li id="129"class="codename">장전<li id="130"class="codename">구서<li id="131"class="codename">두실<li id="132"class="codename">남산<li id="133"class="codename">범어사
+		  <li id="134"class="codename">노포
+	  </div>
+	  <div class="train_2">
+		<li id="201" class="codename">장산</li><li id="202" class="codename">중동</li><li id="203" class="codename">해운대<li id="204" class="codename">동백
+		<li id="205" class="codename">벡스코(시립미술관)<li id="206" class="codename">센텀시티<li id="207" class="codename">민락<li id="208" class="codename">수영
+		<li id="209" class="codename">광안<li id="210" class="codename">금련산<li id="211" class="codename">남천<li id="212" class="codename">경성대.부경대<li id="213" class="codename">대연
+		<li id="214" class="codename">못골<li id="215" class="codename">지게골<li id="216" class="codename">문현<li id="217" class="codename">국제금융센터·부산은행<li id="218" class="codename">전포
+		<li id="219" class="codename">서면<li id="220" class="codename">부암<li id="221" class="codename">가야<li id="222" class="codename">동의대<li id="223" class="codename">개금
+		<li id="224" class="codename">냉정<li id="225" class="codename">주례<li id="226" class="codename">감전<li id="227" class="codename">사상<li id="228" class="codename">덕포
+		<li id="229" class="codename">모덕<li id="230" class="codename">모라<li id="231" class="codename">구남<li id="232" class="codename">구명<li id="233" class="codename">덕천
+		<li id="234" class="codename">수정<li id="235" class="codename">화명<li id="236" class="codename">율리<li id="237" class="codename">동원<li id="238" class="codename">금곡
+		<li id="239" class="codename">호포<li id="240" class="codename">증산<li id="241" class="codename">부산대양산캠퍼스<li id="242" class="codename">남양산
+		<li id="243" class="codename">양산
+	</div>
+	<div class="train_3">
+		<li id="301"class="codename">수영<li id="302"class="codename">망미<li id="303"class="codename">배산<li id="304"class="codename">물만골
+		<li id="305"class="codename">연산<li id="306"class="codename">거제<li id="307"class="codename">종합운동장<li id="308"class="codename">사직
+		<li id="309"class="codename">미남<li id="310"class="codename">만덕<li id="311"class="codename">남산정<li id="312"class="codename">숙등
+		<li id="313"class="codename">덕천<li id="314"class="codename">구포<li id="315"class="codename">강서구청<li id="316"class="codename">체육공원
+		<li id="317"class="codename">대저
+	</div>
+	<div class="train_4">
+		<li id="401"class="codename">미남<li id="402"class="codename">동래<li id="403"class="codename">수안<li id="404"class="codename">낙민
+		<li id="405"class="codename">충렬사<li id="406"class="codename">명장<li id="407"class="codename">서동<li id="408"class="codename">금사
+		<li id="409"class="codename">반여농산물시장<li id="410"class="codename">석대<li id="411"class="codename">영산대<li id="412"class="codename">동부산대학
+		<li id="413"class="codename">고촌<li id="414"class="codename">안평
+	</div>
+	<div class="train_Bu">
+		<li>사상<li>괘법르네시떼<li>서부산유통지구<li>공항
+		<li>덕두<li>등구<li>대저<li>평강<li>대사
+		<li>불암<li>지내<li>김해대학<li>인제대<li>김해시청
+		<li>부원<li>봉황<li>수로왕릉<li>박물관<li>연지공원
+		<li>장신대<li><li>가야대
+	</div>
+	<div class="train_Dong">
+		<li>부전<li>거제해맞이<li>거제<li>교대
+		<li>동래<li>안락<li>부산원동<li>재송<li>센텀
+		<li>벡스코<li>신해운대<li>송정<li>오시리아<li>기장
+		<li>일광<li>좌천<li>월내<li>서생<li>남창
+		<li>망양<li>덕하<li>개운포<li>태화강
+	</div>
+	</div>
+<script>
+	$(document).ready(function() {
+ 		$('#lineNumber').change(function() {
+   			 var result = $('#lineNumber option:selected').val();
+   			 if (result == '1') {
+    		  $('.train_1').show();
+			  $('.train_2').hide();
+			  $('.train_3').hide();
+			  $('.train_4').hide();
+			  $('.train_Bu').hide();
+			  $('.train_Dong').hide();
+  			 } 
+			 else if(result == '2') {
+     		 $('.train_2').show();
+			 $('.train_1').hide();
+			 $('.train_3').hide();
+			 $('.train_4').hide();
+			 $('.train_Bu').hide();
+			 $('.train_Dong').hide();
+			}
+			else if(result == '3') {
+     		 $('.train_3').show();
+			 $('.train_1').hide();
+			 $('.train_2').hide();
+			 $('.train_4').hide();
+			 $('.train_Bu').hide();
+			 $('.train_Dong').hide();
+			}
+			else if(result == '4') {
+     		 $('.train_4').show();
+			 $('.train_1').hide();
+			 $('.train_2').hide();
+			 $('.train_3').hide();
+			 $('.train_Bu').hide();
+			 $('.train_Dong').hide();
+			}
+			else if(result == 'Bu') {
+     		 $('.train_Bu').show();
+			 $('.train_1').hide();
+			 $('.train_2').hide();
+			 $('.train_3').hide();
+			 $('.train_4').hide();
+			 $('.train_Dong').hide();
+			}
+			else if(result == 'Dong') {
+     		 $('.train_Dong').show();
+			 $('.train_1').hide();
+			 $('.train_2').hide();
+			 $('.train_3').hide();
+			 $('.train_4').hide();
+			 $('.train_Bu').hide();
+			}
+			else {
+			 $('.train_1').hide();
+			 $('.train_2').hide();
+			 $('.train_3').hide();
+			 $('.train_4').hide();
+			 $('.train_Bu').hide();
+			 $('.train_Dong').hide();
+			}
+		 }); 
+		}); 
+
+var APIURL = "http://data.humetro.busan.kr/voc/api/open_api_process.tnn?serviceKey=YqHKyQA0YlIXqy3TMHU0QxQlXCjrkEMJTlTTB4mUWB4RbVy6fxGYGIwMx8a5oZb8DpSmfb%2FIsUpy9pgZ9CRUtg%3D%3D&day=1&updown=0&act=xml&scode=";
+	$(".codename").click(function(){
+		var productId = $(this).attr('id');
+		$(location).attr("href", APIURL+productId)
+	});
+		
+</script>
+</body>
+</html>
